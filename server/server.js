@@ -10,9 +10,9 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 
 
-// app.get('/', ( req, res ) => {
-//      res.json('Hola Mundo');
-// })
+app.get('/', ( req, res ) => {
+     res.send('Hola Mundo');
+})
 
 app.get('/usuario', ( req, res ) => {
     res.json('Get Usuario');
